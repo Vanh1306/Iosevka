@@ -1,0 +1,48 @@
+[buildPlans.iosevka-aesthetic-quasi]
+family = "Iosevka Aesthetic Quasi"
+spacing = "quasi-proportional"      # Chuyển sang khoảng cách Quasi-Proportional
+serifs = "sans"
+noCvSs = false
+exportGlyphNames = false
+
+# Giảm width xuống mức thấp nhất (416 - Ultra-Condensed)
+[buildPlans.iosevka-aesthetic-quasi.widths.normal]
+shape = 416
+menu = 1
+css = "ultra-condensed"
+
+# 1. Tùy chỉnh kiểu dáng ký tự (Character Variants)
+[buildPlans.iosevka-aesthetic-quasi.variants.design]
+zero = "slashed"               # Số 0 gạch chéo
+capital-i = "serifed"          # Chữ I hoa có gạch 2 đầu
+i = "serifed-flat-hook"        # Chữ i có chân móc phẳng
+l = "tailed"                   # Chữ l có đuôi cong nhẹ
+g = "double-storey"            # Chữ g kiểu 2 tầng
+a = "double-storey"            # Chữ a kiểu 2 tầng
+asterisk = "hex-high"          # Dấu * 6 cánh
+number-sign = "slanted"        # Dấu # nằm nghiêng
+at = "four-fold"               # Ký tự @ bo tròn
+dollar = "interrupted"         # Dấu $ gạch đứt đoạn
+brace = "curly"                # Dấu ngoặc nhọn {} uốn cong
+
+# 2. Bật bộ ký tự nối (Ligatures)
+[buildPlans.iosevka-aesthetic-quasi.ligatures]
+inherits = "programming"
+
+# 3. Giữ 2 độ dày (Regular & Bold) để build nhanh
+[buildPlans.iosevka-aesthetic-quasi.weights.regular]
+shape = 400
+css = 400
+
+[buildPlans.iosevka-aesthetic-quasi.weights.bold]
+shape = 700
+css = 700
+
+# 4. Kiểu chữ thẳng và nghiêng
+[buildPlans.iosevka-aesthetic-quasi.slopes.upright]
+angle = 0
+shape = "upright"
+
+[buildPlans.iosevka-aesthetic-quasi.slopes.italic]
+angle = 9.4
+shape = "italic"
